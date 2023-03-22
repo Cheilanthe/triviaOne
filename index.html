@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Triviamil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+  <h1><MARQUEE> BIENVENIDO A TRIVIA DE GEOGRAFÍA </MARQUEE></h1>
+
+  <h2> Elige la trivia que deseas jugar: </h2> <br>
+
+  <br>
+  <style>
+    #capitales{
+      display:none;
+    }
+    #monedas {
+      display:none;
+    }
+  </style>
+ 
+  <!--se definieron los botones -->
+  
+<button id="boton1" onclick="mostrar();">Trivia de capitales</button>
+  
+<button id="boton2" onclick="mostrar2();">Trivia de Monedas</button>          
+
+<!--esta es la sección de trivia de capitales -->
+<div id ="capitales" form action= " ">
+  <p> 1. ¿Cuál es capital de Afganistan?<br>
+  Respuestas: <br>
+  <input type=radio name="p1" id="r11"> Kabul<br>
+  <input type=radio name="p1" id="r12"> Tirana<br>
+  <input type=radio name="p1" id="r13"> Berlín<br>
+  2. ¿Cuál es la capital de Austalia?<br>
+  Respuestas: <br>
+  <input type=radio name="p2" id="r21"> Camberra<br>
+  <input type=radio name="p2" id="r22"> Australía <br>
+  <input type=radio name="p2" id="r23"> Sídney <br>
+  </p>
+  <input type="button" value= "Resultados"     onclick="resultadoscap()">
+  <button id ="boton3"onclick="ocultar();">Regresar al Ménu</button>
+</div>
+</form>  
+  
+  
+  
+  <!--esta es la sección de trivia de monedas -->
+<div id = "monedas" form action=" ">
+  <p> 1. ¿Cuál es La moneda de Irak? <br>
+    Respuestas: <br>
+  <input type=radio name="p4" id="r41">Dinar <br>
+  <input type=radio name="p4" id="r42">Yuan <br>
+  <input type=radio name="p4" id="r43">Euro<br>
+  2. ¿La  moneda de albania es?<br>
+    Respuestas: <br>
+  <input type=radio name="p5" id="r51"> Quetzal<br>
+  <input type=radio name="p5" id="r52"> lek <br>
+  <input type=radio name="p5" id="r53"> Libra <br>
+  </p>
+  <input type="button" value= "Resultados" onclick="resultadosmoneda()">
+  <button id ="boton3"onclick="ocultar2();">Regresar al Ménu</button>
+</div>
+</form>  
+
+
+
+ 
+<script src="script.js"></script>
+
+ 
+</body>
+
+</html>
